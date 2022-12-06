@@ -12,15 +12,15 @@ Setting up User API Key:
 3) Save and Run
 
 
-Text Suggest
+#Text Suggest
 
-Overview
+#Overview
 
 We are developing an AI tool to assist users in constructing and detailing text messages they want to send. We are targeting this app toward busy users who need to send detailed texts while under time constraints or when they simply need a break from thinking!
 
 The tool just needs two short inputs from the user and will use those to generate a comprehensive list of complete and detailed text messages which the user may use.
 
-App Functionality
+#App Functionality
 
 This android application is created for the use case of accessible, customizable, and reliable text message suggestions for phone users through utilizing the Generative Pre-trained Transformer 3 (GPT3) autoregressive language model developed by OpenAI. 
 
@@ -36,14 +36,14 @@ The API will read the inputted string and output an AI-generated, human-like tex
 The app will repeat the input call to the API four more times (five total calls) and generate a scrollable list of 5 outputs in the Output View which the user can choose to copy.
 
 
-Tech Stack and Android System Components (Tentative)
+#Tech Stack and Android System Components (Tentative)
 
 Kotlin (Activity Component, Content Providers)
 Firebase
 GPT3 API
 
 
-Views
+#Views
 
 Login View. This is the screen that will be displayed if the user isn’t logged in yet. It will have input fields for a phone number and password as well as a link to sign up if the user doesn’t have an account yet.
 
@@ -56,7 +56,7 @@ Output View. This view displays a list of output suggestions after an input has 
 History View. This is a view that displays a scrollable list of all previously suggested text messages. The list will contain cards with input from the user and corresponding suggestions.
 
 
-User Stories
+#User Stories
 
 A user can sign up with their phone number and a password
 A user can input a contact name and the context of a text message they want to send. They then receive a list of suggestions for what to send
@@ -65,7 +65,7 @@ A user can view previous inputs and suggestions
 
 
 
-Risks 
+#Risks 
 
 Some project risks that we have identified and ways to address them are:
 It may not always produce the best suggestions and the outputted suggestions might be correct. We plan on minimizing this risk by producing a list of five suggestions and letting the user choose which one makes the most sense for them.
